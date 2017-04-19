@@ -4,7 +4,7 @@ use warnings;
 use DBI;
 use Text::CSV;
 
-my $file = "tabledata.csv";
+my $file = 'tabledata.csv';
 
 open CSV, $file or die "Couldn't open file $file, $!\n";
 my @csv_content = <CSV>;
