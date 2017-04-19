@@ -39,8 +39,8 @@ foreach(@csv_content){
 
          $statement = "INSERT INTO $table ($field_line) VALUES ($line);";
          print $statement."\n";
-         $sth = $dbh->prepare($statement) or die "Couldn't prepare statement: " . $dbh->errstr\n;
-         $sth->execute() or die "Couldn't execute statement: " . $sth->errstr\n;
+         $sth = $dbh->prepare($statement) or die "Couldn't prepare statement: " . $dbh->errstr;
+         $sth->execute() or die "Couldn't execute statement: " . $sth->errstr;
 
       }
       else {
