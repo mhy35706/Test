@@ -1,0 +1,1 @@
+SELECT AVG(temp) AS TempAverage FROM sql3169774.TableTest;
