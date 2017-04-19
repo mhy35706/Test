@@ -1,6 +1,5 @@
 # Test
-
-test with two tasks:
+Test with two tasks:
 
 Task 1. Write a script that will parse data from the tabledata.csv file, then create and insert the csv data into a table in a mysql database (connection details below). 
 
