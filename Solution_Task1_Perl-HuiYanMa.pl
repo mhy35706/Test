@@ -18,7 +18,7 @@ my $dbpass = "GdsGb54Lky";
 my $table = "TableTest";
 
 my $dsn = "DBI:mysql:database=$dbname;host=$dbhost;port=$dbport;";
-my $dbh = DBI->connect($dsn, $dbuser, $dbpass) or or die "Couldn't connect to database: " . DBI->errstr;
+my $dbh = DBI->connect($dsn, $dbuser, $dbpass) or die "Couldn't connect to database: " . DBI->errstr;
 
 my $sth;
 my $statement;
@@ -39,8 +39,8 @@ foreach(@csv_content){
 
          $statement = "INSERT INTO $table ($field_line) VALUES ($line);";
          print $statement."\n";
-         $sth = $dbh->prepare($statement) or die "Couldn't prepare statement: " . $dbh->errstr\n;
-         $sth->execute() or die "Couldn't execute statement: " . $sth->errstr\n;
+         $sth = $dbh->prepare($statement) or die "Couldn't prepare statement: " . $dbh->errstr;
+         $sth->execute() or die "Couldn't execute statement: " . $sth->errstr;
 
       }
       else {
