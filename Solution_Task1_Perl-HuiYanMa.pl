@@ -11,7 +11,7 @@ my @csv_content = <CSV>;
 close CSV;
 
 my $dbname = "sql3169774";
-my $dbhost = "sql3.freemysqlhosting.net";
+my $dbhost = 'sql3.freemysqlhosting.net';
 my $dbport = "3306";
 my $dbuser = "sql3169774";
 my $dbpass = "GdsGb54Lky";
