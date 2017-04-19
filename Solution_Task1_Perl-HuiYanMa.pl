@@ -18,7 +18,7 @@ my $dbpass = "GdsGb54Lky";
 my $table = "TableTest";
 
 my $dsn = "DBI:mysql:database=$dbname;host=$dbhost;port=$dbport;";
-my $dbh = DBI->connect($dsn, $dbuser, $dbpass) or or die "Couldn't connect to database: " . DBI->errstr;
+my $dbh = DBI->connect($dsn, $dbuser, $dbpass) or die "Couldn't connect to database: " . DBI->errstr;
 
 my $sth;
 my $statement;
@@ -55,7 +55,7 @@ foreach(@csv_content){
 	print "Failed to Parse line\n";
     }
 
-    if (not $cvs->eof){
+    if (not $csv->eof){
 	$csv->error_diag();
     }
 }
