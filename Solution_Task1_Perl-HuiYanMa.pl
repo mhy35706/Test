@@ -55,7 +55,7 @@ foreach(@csv_content){
 	print "Failed to Parse line\n";
     }
 
-    if (not $cvs->eof){
+    if (not $csv->eof){
 	$csv->error_diag();
     }
 }
